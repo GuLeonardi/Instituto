@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Instituto Península</title>
-		<link rel="stylesheet" href="css/onepage.css" />
+		
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/onepage.css" />
 		<script
 			src="https://kit.fontawesome.com/7160ca343e.js"
 			crossorigin="anonymous"
@@ -13,6 +14,9 @@
 	</head>
 
 	<body>
+		
+		<label for="toggle">&#9776</label>
+		<input type="checkbox" id="toggle"/>
 		<header class="header">
 			<div class="header_menu">
 				<div class="header_menu_logo">
@@ -22,18 +26,21 @@
 				</div>
 
 				<div class="header_menu_lista">
-					<ul>
+					<div class='menu'>
 						<a href="Info.html">WHO WE ARE</a>
 						<a href="Info.html">INITIATIVES</a>
 						<a href="Noticias.html">OUR TEAM</a>
 						<a href="Feed.html">BOARD</a>
 						<a href="Form.html">CONTACT</a>
-					</ul>
+					</div>
+				</div>
+
+				<div>
+					<a class="pt-en">PT|EN</a>
 				</div>
 
 				<div class="header_menu_icons">
-					<a href="Form.html">PT|EN</a>
-					<ul class="list-unstyled list-socials">
+					<ul class="list-unstyled ">
 						<li>
 							<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
 						</li>
@@ -56,13 +63,13 @@
 		</header>
 
 		<section class="whoweare">
-			<div style="width: 50%;">
-				<div class="text-left" style="margin-left: 50px;">
+			<div style="margin: 0 0 0 400px;width: 35%;">
+				<div class="text-left" >
 					<h2 style="font-size: 50px;">Who we are</h2>
 					<hr />
 				</div>
 				<div class="content">
-					<p style="margin-left: 50px;margin-right: 50px;">
+					<p>
 						Instituto Península is a social organization that works in Education
 						and Sports to improve teacher training because we understand that
 						teachers are the basis for quality public education. We work on the
@@ -70,6 +77,9 @@
 						emotional, and social dimensions so that they are better prepared
 						to" strengthen students' learning process. We think and act
 						systematically, seeking partnerships to develop Brazilian education.
+
+					</p>
+					<p>
 						At Instituto Península, we believe it is essential to unite the best
 						of existing theories about teachers with the profession in everyday
 						life to execute our actions. Our organization supports four
@@ -80,8 +90,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="whoweare_image">
-				<img src="lib/img/image.png" />
+			<div class="whoweare_image" >
+				<img  src="lib/img/image.png" />
 			</div>
 		</section>
 
@@ -150,6 +160,91 @@
 			<button id="test"></button>
 		</div>
 
+		<section class="carousel-section">
+			<div class="carousel">
+				<div>
+					<h1>Our team</h1>
+				</div>
+				<div>
+					
+					<a class="arrowCarousel" target="_blank"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+					<a class="arrowCarousel" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+
+			<div class="carousel">
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+				
+				
+			</div>
+
+			
+			<div 
+			style="height:1px;width:100%; background-color: #e0e0e0;">
+			</div>
+
+			<div class="carousel">
+				<div>
+					<h1>Board</h1>
+				</div>
+
+				<div>
+					
+					<a class="arrowCarousel" target="_blank"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+					<a class="arrowCarousel" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
+
+			</div>
+			<div class="carousel">
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+
+				<div class="carousel-person">
+					<img src="lib/img/carousel1.jpg" />
+					<div class="carousel-name">Heloisa Morel</div>
+					<div class="carousel-role">Presidente do conselho</div>
+				</div>
+				
+				
+			</div>
+			
+			
+		</section>
+
 		<div style="height:5px;width:100%; background-color: #c63527"></div>
 
 		<section style="background-color: #e6e6e6; text-align: center;">
@@ -157,7 +252,7 @@
 			<div style="display: flex;justify-content: center">
 				<div class="text-left" style="width: 30%;">
 					<p>
-						Email:<br />
+						Email<br/>
 						<a href="#">contato@institutopeninsula.org.br</a>
 					</p>
 				</div>
@@ -206,6 +301,7 @@
 			</div>
 		</footer>
 
+		<script src="js/script.js"></script>
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	</body>

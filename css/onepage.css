@@ -5,52 +5,139 @@ body {
 	width: 100%;
 }
 
-.header_menu {
-	display: flex;
-	justify-content: space-around;
-	height: 70px;
-	align-items: center;
+label {
+	font-size: 26px;
+	margin: 0 40px 0 0;
+	line-height: 70px;
+	display: none;
 }
 
-ul a {
+@media only screen and (max-width: 500px) {
+	label {
+		display: block;
+		cursor: pointer;
+	}
+	.header_menu {
+	}
+}
+
+#toggle {
+	display: none;
+}
+
+.carousel-person {
+	text-align: center;
+}
+
+.carousel-name {
+	color: #c63527;
+	font-size: 20px;
+}
+
+.carousel-role {
+	color: #a4a3a3;
+}
+
+.carousel-section {
+	margin: 25px 0 50px 0;
+}
+
+.carousel {
+	margin: 25px 400px 25px 400px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.arrowCarousel {
+	display: inline-block;
+	border: #c63527 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 12px;
+	height: 50px;
+	width: 50px;
+}
+
+.arrowCarousel i {
+	color: #c63527;
+	font-size: 25px;
+}
+
+.menu a {
 	text-decoration: none;
 	margin: 5px;
 	color: #a4a3a3;
 }
 
+.header_menu {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 300px 0 300px;
+	height: 70px;
+	align-items: center;
+}
+
+.header_menu a:hover {
+	text-decoration: none;
+}
+
 .header_menu_lista {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	font-size: 14px;
+	height: 70px;
+}
+
+.header_menu_lista .menu {
+	display: flex;
+	align-items: center;
+	height: 70px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.header_menu_lista .menu a {
+	display: flex;
+	align-items: center;
+	padding: 0 10px 0 10px;
+	margin: 0 10px 0 10px;
+	height: 70px;
+	text-decoration: none;
+	transition: all 0.3;
+}
+
+.header_menu_lista .menu a:hover {
+	background-color: #f0f0f0;
+	color: #c63527;
 }
 
 .header_menu_icons {
 	display: flex;
+	margin-top: 10px;
 }
-
 .header_menu_icons li {
 	display: inline;
 }
-
 .header_menu_icons li a {
-	border: #a5a5a5 1px solid;
+	border: #efefef 1px solid;
 	border-radius: 50%;
-	width: 30px;
-	height: 30px;
+	width: 24px;
+	height: 24px;
 	display: inline-block;
 	text-align: center;
-	line-height: 30px;
 	color: #a4a3a3;
+	font-size: 12px;
+	outline: none;
 }
-
 .header_menu_icons i {
-	margin: 10px auto;
 	position: relative;
-	bottom: 3px;
-	color: #a4a3a3;
+	bottom: -3px;
+	color: #999191;
 }
 
 .header_banner {
 	width: auto;
+	text-align: center;
 }
 
 .logo {
@@ -59,13 +146,27 @@ ul a {
 }
 
 .whoweare {
+	margin: 15px 0 15px 0;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+}
+
+.whoweare p {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #717372;
 }
 
 .whoweare_image {
+	justify-content: flex-start;
 	display: flex;
 	align-items: center;
+	margin-left: 50px;
+}
+
+.whoweare_image img {
+	margin: 15px 0 15px 0;
+	width: 400px;
 }
 
 #test {
