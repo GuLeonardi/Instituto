@@ -1,4 +1,37 @@
-/* ver a responsividade do padding da página */
+.main {
+	display: flex;
+	justify-content: center;
+	color: lighten(gray, 25%);
+	background-color: white;
+	overflow-y: hidden;
+	margin: 0 400px 40px 400px;
+}
+
+.items {
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+	transition: all 0.2s;
+	transform: scale(0.98);
+	will-change: transform;
+	user-select: none;
+	cursor: pointer;
+}
+
+.items.active {
+	cursor: grabbing;
+	transform: scale(1);
+}
+
+.item {
+	display: inline-block;
+	padding-top: 10px;
+	min-height: 150px;
+	min-width: 100px;
+	margin: 10px 25px;
+}
 
 body {
 	/* padding: 0 50px 0 50px;  ver o padding, formato em cada monitor. */
@@ -43,7 +76,7 @@ label {
 }
 
 .carousel {
-	margin: 25px 400px 25px 400px;
+	margin: 25px 400px 0 400px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -169,23 +202,43 @@ label {
 	width: 400px;
 }
 
+.hoverMenu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hoverMenu1 {
+	background-color: #b83222;
+}
+.hoverMenu2 {
+	background-color: #00285c;
+}
+.hoverMenu3 {
+	background-color: #ecb000;
+}
+
+.hoverMenu4 {
+	background-color: #008486;
+}
+
 #test {
-	width: 250px;
-	margin-bottom: 10px;
-	height: 250px;
-	background: #34495e;
-	transform: scale(1);
+	width: 420px;
+	height: 550px;
 	transition: all 1s;
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
+	position: relative;
+	z-index: 0;
 	border: none;
 }
 #test:hover {
-	width: 500px;
-	height: 500px;
-	box-shadow: 6px 6px 6px rgba(0, 0, 0, 1);
+	border-radius: 3px;
+	height: 570px;
+	width: 1000px;
+	z-index: 1;
+	box-shadow: 0 0 50px #000;
 	color: white;
 }
 #test p {
@@ -232,14 +285,20 @@ label {
 }
 
 .button-mail {
-	border-color: #c63527;
+	border: 1px solid #c63527;
 	border-radius: 25px;
 	color: #c63527;
 	padding: 10px 0 10px 0;
+	margin-top: 5px;
 	width: 120px;
 }
 
+.button-mail:focus {
+	outline: none;
+}
+
 footer {
+	padding: 20px 0 10px 0;
 	background-color: #717372;
 	color: white;
 }
